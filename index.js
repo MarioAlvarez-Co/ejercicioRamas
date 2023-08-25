@@ -65,9 +65,15 @@ console.log(` el Arreglo de los mayores es ${arrayMayores} y el arreglo de los m
 // forma de hacerlo con funciones de los arreglos
 let arrayValores=[1,2,3,4,5,6]
 
-let acumulado=arrayValores.reduce((acumulador,elemento)=>{
-    return acumulador;
-},0)
+ // El método reduce() ejecuta una función reductora sobre cada elemento de un array, 
+ //devolviendo como resultado un único valor.
+let acumulado=arrayValores.reduce((acumulador,elemento)=> acumulador+elemento,4)
+ let promedio2=acumulado/arrayValores.length;
+
+
+
 console.log(acumulado);
  console.log(acumulado/arrayValores.length);
 
+
+ console.log("Rama de Juli")
